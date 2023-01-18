@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="otpverificatio.css" />
+    <title>OTP verification</title>
+  </head>
+
+  <body class="gradient-custom">
+    <script src="otp.js"></script>
+    <div
+      class="container height-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="position-relative">
+        <div class="card p-2 text-center">
+          <h6>
+            Please enter the one time password <br />
+            to verify your account
+          </h6>
+          <div><span>A code has been sent to your e-mail</span></div>
+          <div
+            id="otp"
+            class="inputs d-flex flex-row justify-content-center mt-2"
+          >
+            <input
+              class="m-2 text-center form-control rounded"
+              type="text"
+              id="first"
+              maxlength="1"
+            />
+            <input
+              class="m-2 text-center form-control rounded"
+              type="text"
+              id="second"
+              maxlength="1"
+            />
+            <input
+              class="m-2 text-center form-control rounded"
+              type="text"
+              id="third"
+              maxlength="1"
+            />
+            <input
+              class="m-2 text-center form-control rounded"
+              type="text"
+              id="fourth"
+              maxlength="1"
+            />
+            <input
+              class="m-2 text-center form-control rounded"
+              type="text"
+              id="fifth"
+              maxlength="1"
+            />
+            <input
+              class="m-2 text-center form-control rounded"
+              type="text"
+              id="sixth"
+              maxlength="1"
+            />
+          </div>
+          <a href="#">
+            <div class="mt-4">
+              <a href="Dashboard.html">
+                <button class="btn org-button px-4 validate fw-medium">
+                  Verify
+                </button>
+              </a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
