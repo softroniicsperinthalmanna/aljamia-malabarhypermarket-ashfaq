@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+      <meta charset="UTF-8">
+      <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+      <link
+        rel="stylesheet"
+        href="../contrast-bootstrap-pro/css/bootstrap.min.css" />
+      <link
+        rel="stylesheet"
+        href="../contrast-bootstrap-pro/css/cdb.css" />
+      <script
+        src="../contrast-bootstrap-pro/js/cdb.js"></script>
+      <script
+        src="../contrast-bootstrap-pro/js/bootstrap.min.js"></script>
+      
+      <title>How to create bootstrap charts using bootstrap 5</title>
+  
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+<link rel="stylesheet" href="D:\Bootstrap\css\bootstrap.css">
+<link rel="stylesheet" href="templatecss.css">
+<title>
+  
+   Material Dashboard of Malabar
+  
+
+  
+
+  
+</title>
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+<!-- Nucleo Icons -->
+<link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+<link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<!-- CSS Files -->
+
+
+
+<link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+<style>
+  body{
+    overflow: hidden;
+  }
+.table-responsive {
+  
+  height: 500px;
+
+  border: 1px  solid #eee;
+  padding: 5px;
+  overflow-x: auto;
+}
+
+
+
+.table-wrapper-scroll-y {
+display: block;
+}
+
+</style>
+
+  </head>
+
+
+  <body class="g-sidenav-show " style="background-color: #121929;">
+    
+
+    
+
+    
+      <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " style="background-color:#473159 " id="sidenav-main " data-scroll="false">
+
+  <div class="sidenav-header">
+    <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+      <img src="admin-settings-male.png" class="navbar-brand-img h-100" alt="main_logo">
+      <span class="ms-4 font-weight-bold text-white">Admin</span>
+    </a>
+  </div>
+
+
+  <hr class="horizontal light mt-0 mb-2">
+
+  <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+    <ul class="navbar-nav">
+      
+
+      
+        
+
+          
+
+          
+  
+<li class="nav-item">
+  <a class="nav-link text-white" href="Dashboard.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">dashboard</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Dashboard</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="salesreport.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">table_view</i>  </div>
+        <span class="nav-link-text ms-1" >Sales Report</span>
+    
+      
+  </a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white  nav-link active " href="Stockreport.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+       
+    
+    <span class="nav-link-text ms-1"> <i class="material-icons opacity-10">table_view</i>&nbsp;
+    Stock Report</span>
+  </div>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="employeedetails.html">
+   
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">contacts</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Employees</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="./rtl.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+    <i class="material-icons opacity-10">reviews</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Customer Reviews</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="./notifications.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">notifications</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Notifications</span>
+  </a>
+</li> 
+<li class="nav-item">
+  <a class="nav-link text-white " href="addemployee.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">group_add</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Add Employee</span>
+  </a>
+</li>
+
+ 
+<li class="nav-item">
+  <a class="nav-link text-white " href="./profile.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">logout</i>
+      </div>
+    
+       <span class="nav-link-text ms-1">Sign Out</span>
+  </a>
+</li>
+</ul>
+  
+</aside>
+
+      <main class="main-content border-radius-lg " style="background-color:#121929;">
+        <!-- Navbar -->
+
+ <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+  <div class="container-fluid py-1 px-3 ">
+    <nav aria-label="breadcrumb">
+      
+      <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Stock Report</li>
+      </ol>
+      <h6 class="font-weight-bolder mb-0 text-white ">Stock Report</h6>
+      
+    </nav>
+  
+    
+  <!-- </div> -->
+</nav>
+
+
+
+
+      </div>
+      </div>
+      <!-- <div><span class="p-2 fs-4 fw-bold text-center" style="position: absolute;
+        width: 420px;
+        height: 52px;
+        left: 1040px;
+        top: 90px;
+        color:#F9B17A;
+        background: rgba(66, 71, 105, 0.5);
+        border-radius: 4px;">Malbar Hypermarket LLC,Masafi  <i class="material-icons opacity-10 ps-2">keyboard_arrow_down</i></span></div> -->
+
+        <style>
+          .dropbtn {
+            width: 425px;
+            height: 52px;
+            
+            color:#F9B17A;
+            background: rgba(66, 71, 105, 0.5);
+            border-radius: 4px;
+            
+           
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+          }
+          
+          .dropdown {
+            left: 750px;
+            top: -20px;
+            position: relative;
+            display: inline-block;
+            z-index:2;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 420px;
+            height: 52px;
+            
+            color:#F9B17A;
+          
+            border-radius: 4px;
+            
+           
+            padding: 16px;
+        
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color:#F9B17A;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {background-color:rgba(0,0,0,0.2);}
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          
+          .dropdown:hover .dropbtn {
+            background-color:rgba(0,0,0,0.2);
+          }
+          </style>
+          </head>
+          <body>
+          
+         
+          l̥ō
+          <div class="dropdown">
+            <button class="dropbtn fs-4 p-2">Malbar Hypermarket LLC, Masafi <i class="material-icons opacity-10 ps-2">keyboard_arrow_down</i></button>
+            <div class="dropdown-content pt-1 fs-5">
+            <a href="stockreportdibba.html">Malbar Hypermarket LLC, Dibba</a>
+            <a href="stcokreportsanayya.html">Malbar Hypermarket LLC, Sanayya</a>
+            </div>
+          </div>
+          
+
+  
+
+
+
+      <body>
+        
+        
+      
+        
+     
+<!-- table -->
+<div class="container-fluid py-4 ">  <div class="row" >
+  <div class="col-12">
+    <div class="card my-4" >
+      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-1" style="background-color:#473159">
+        <div class="shadow-primary border-radius-lg pt-4 pb-3" >
+          <h6 class="text-white fw-normal text-start ms-3 text-capitalize ps-3">Stock Report</h6>
+        </div>
+      </div>
+      <div class="card-body px-0 pb-2">
+        <div class="table-responsive p-0">
+          <table class="table align-items-center mb-0 ">
+            <thead>
+              <tr>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Sl.No.</th>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUCT ID</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PRODUCT NAME</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">UOM</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Cost/Unit</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stock</th>
+                
+              <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Stock Value</th>
+
+            
+
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <!-- <div class="d-flex px-2 py-1"> -->
+                    <!-- <div>
+                    <h6>35381</h6>
+                    </div> -->
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class=" mb-0 ms-4 text-sm">1</h6>
+                     
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs  font-weight-bold mb-0">8901444102454</p>
+                
+                </td>
+              
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">0245 MILAMINE PLATE</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">1.00</span>
+                  </td>
+              
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">46.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">46.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">2</h6>
+                    
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">35381
+
+                  </p>
+                 
+                </td>
+                <td>
+                  <p class="text-xs align-middle text-center font-weight-bold mb-0">1121 RICE 20KG</p>
+                 
+                </td>
+               
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+               
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">120.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">2.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">240.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">3</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">35235</p>
+                  
+                </td>
+                <td>
+                  <p class="text-xs align-middle text-center font-weight-bold mb-0">1211 RICE 20KG</p>
+                  
+                </td>
+              
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">140.00</span>
+                </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">3.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">420.00</span>
+                  </td>
+               
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">4</h6>
+                     
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">32844</p>
+                  
+                </td>
+                <td>
+                  <p class="text-xs align-middle text-center font-weight-bold mb-0">12MM ROPE</p>
+                  
+                </td>
+               
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14.37</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">4.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">57.48</span>
+                  </td>
+                
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex  flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">5</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">24411</p>
+                  
+                </td>
+                <td>
+                    <div class="d-flex flex-column justify-content-center">
+                  <p class="text-xs align-middle text-center font-weight-bold mb-0">12PCS CUP SOUCER</p>
+                  
+                </td>
+                
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">5.00</span>
+                </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">6.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">30.00</span>
+                  </td>
+                
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">6</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">7</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">6227691231238</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">13APROCELAIN TUBE FUSE</span>
+                </td>
+               
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">3.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">4.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">8</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">9</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">10</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">11</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">12</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">13</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">14</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">15</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 ms-4 text-sm">16</h6>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">7356892556532</p>
+                 
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">12PS CUPSOUCER SET AC655</span>
+                </td>
+                
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">PC</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">8.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">11.00</span>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">88.00</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+     
+</body>
+</html>

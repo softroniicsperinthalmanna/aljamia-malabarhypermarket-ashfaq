@@ -1,0 +1,51 @@
+body {
+  background: #473159;
+}
+input:focus{
+  box-shadow:#473159;
+}
+::placeholder{
+  color:rgb(189, 187, 187);
+  font-size: small;
+}
+input[type=date] {
+
+  color:rgb(189, 187, 187);
+  font-size: small;
+}
+.profile-button {
+  background: rgb(99, 39, 120);
+  box-shadow: none;
+  border: none
+}
+
+.profile-button:hover {
+  background: #682773
+}
+
+.profile-button:focus {
+  background: #682773;
+  box-shadow: none
+}
+
+.profile-button:active {
+  background: #682773;
+  box-shadow: none
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer
+}
+
+.labels {
+  font-size: 11px;
+  
+}
+
+.add-experience:hover {
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8
+}
