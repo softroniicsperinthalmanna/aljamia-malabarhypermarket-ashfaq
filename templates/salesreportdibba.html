@@ -1,0 +1,851 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+      <meta charset="UTF-8">
+      <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+      <link
+        rel="stylesheet"
+        href="../contrast-bootstrap-pro/css/bootstrap.min.css" />
+      <link
+        rel="stylesheet"
+        href="../contrast-bootstrap-pro/css/cdb.css" />
+      <script
+        src="../contrast-bootstrap-pro/js/cdb.js"></script>
+      <script
+        src="../contrast-bootstrap-pro/js/bootstrap.min.js"></script>
+        
+      <title>Sales Report</title>
+  
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+<!-- Nucleo Icons -->
+<link href="/css/nucleo-icons.css" rel="stylesheet" />
+<link href="/css/nucleo-svg.css" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<!-- CSS Files -->
+
+
+<link href="{% static '/css/dropdownstyle.css' %}" rel="stylesheet" />
+<link id="pagestyle" href="{% static '/css/material-dashboard.css' %}" rel="stylesheet" />
+
+  </head>
+
+
+  <body class="g-sidenav-show " style="background-color: #121929;">
+    
+
+    
+
+    
+      <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " style="background-color:#473159 " id="sidenav-main " data-scroll="false">
+
+  <div class="sidenav-header">
+    <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+      <span class=" font-weight-normal diaplay-5 text-white">Admin</span>
+    </a>
+  </div>
+
+
+  <hr class="horizontal light mt-0 mb-2">
+
+  <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+    <ul class="navbar-nav">       
+
+          
+  
+<li class="nav-item">
+  <a class="nav-link text-white" href="{% url 'Dashboard'%}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">dashboard</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Dashboard</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white nav-link active" href=" {% url 'salesreport'%}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">table_view</i>  </div>
+        <span class="nav-link-text ms-1" >Sales Report</span>
+    
+      
+  </a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'stockreport' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+       
+    
+    <span class="nav-link-text ms-1 "> <i class="material-icons opacity-10">table_view</i>&nbsp;
+    Stock Report</span>
+  </div>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'employeedetails' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">contacts</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Employees</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'customerreviews' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+    <i class="material-icons opacity-10">reviews</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Customer Reviews</span>
+  </a>
+</li>
+
+  
+
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'addemployee' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">group_add</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Add Employee</span>
+  </a>
+</li>
+
+  
+
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'index' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">logout</i>
+      </div>
+    
+       <span class="nav-link-text ms-1">Sign Out</span>
+  </a>
+</li>
+</ul>
+  
+</aside>
+
+      <main class="main-content border-radius-lg " style="background-color:#121929;">
+        <!-- Navbar -->
+
+ <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+  <div class="container-fluid py-1 px-3 ">
+    <nav aria-label="breadcrumb">
+      
+      <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Sales Report</li>
+      </ol>
+      <h6 class="font-weight-bolder mb-0 text-white ">Sales Report</h6>
+      
+    </nav>
+    <!-- <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+     
+    
+  </div> -->
+  
+</nav>
+
+
+
+
+      </div>
+      </div>
+     
+<!-- dropdown button -->
+       
+          </head>
+          <body>
+          
+         
+          
+          <div class="dropdown">
+            <button class="dropbtn fs-4 p-2">Malbar Hypermarket LLC, Dibba <i class="material-icons opacity-10 ps-2">keyboard_arrow_down</i></button>
+            <div class="dropdown-content pt-1 fs-5">
+            <a href="{% url 'salesreport' %}">Malbar Hypermarket LLC, Masafi</a>
+            <a href="{% url 'salesreportsanayya' %}">Malbar Hypermarket LLC, Sanayya</a>
+            </div>
+          </div>
+          
+
+  
+
+
+
+      <body>
+                
+      
+        
+     
+<!-- table -->
+<div class="container-fluid py-4 ">  <div class="row" >
+  <div class="col-12">
+    <div class="card my-4" >
+      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-1" style="background-color:#473159">
+        <div class="shadow-primary border-radius-lg pt-4 pb-3" >
+          <h5 class="text-white fw-normal text-start ms-3 text-capitalize ps-3">Sales Report  <input type="date"> </h5>
+         
+        </div>
+      </div>
+      <div class="card-body px-0 pb-2">
+        <div class="table-responsive p-0">
+          <table class="table align-items-center mb-0 ">
+            <thead>
+              <tr>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">DATE.</th>
+                <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">CASH SALE</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">CREDIT SALE</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">RETURN AMOUNT</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">CARD AMOUNT</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">TOTAL SALE</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">DISCOUNT</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NET SALE</th>
+
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">TOTAL VAT</th>
+
+             
+            
+
+                
+              </tr>
+            </thead>
+            <tbody>
+             
+              <tr>
+                <tr>
+                  <td>
+                    <p class="text-xs  font-weight-bold mb-0">01/NOV/2022</p>
+                  
+                  </td>
+                  <td>
+                    <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                  
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                  </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                    </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                  </td>
+                </tr>
+                
+               
+                <tr>
+                  <td>
+                    <p class="text-xs  font-weight-bold mb-0">02/NOV/2022</p>
+                  
+                  </td>
+                  <td>
+                    <p class="text-xs  font-weight-bold mb-0">7811.65</p>
+                  
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">5647.87</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">154.01</span>
+                  </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">1357.00</span>
+                    </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">10530.30</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">10530.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">745.77</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-xs  font-weight-bold mb-0">03/NOV/2022</p>
+                  
+                  </td>
+                  <td>
+                    <p class="text-xs  font-weight-bold mb-0">9451.65</p>
+                  
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">6777.87</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">46.01</span>
+                  </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">347.00</span>
+                    </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">23440.30</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">451.77</span>
+                  </td>
+                </tr>
+                <tr>
+                  <tr>
+                    <td>
+                      <p class="text-xs  font-weight-bold mb-0">04/NOV/2022</p>
+                    
+                    </td>
+                    <td>
+                      <p class="text-xs  font-weight-bold mb-0">9451.65</p>
+                    
+                    </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">5667.87</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">353.01</span>
+                    </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">6567.00</span>
+                      </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <tr>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">05/NOV/2022</p>
+                      
+                      </td>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">95511.65</p>
+                      
+                      </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">6747.87</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">233.01</span>
+                      </td>
+                      
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">1467.00</span>
+                        </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">12230.30</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">12230.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">06/NOV/2022</p>
+                      
+                      </td>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">9411.65</p>
+                      
+                      </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">5747.87</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">122.01</span>
+                      </td>
+                      
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">1667.00</span>
+                        </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">14560.30</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">14530.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">07/NOV/2022</p>
+                      
+                      </td>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                      
+                      </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                      </td>
+                      
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                        </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">8/NOV/2022</p>
+                      
+                      </td>
+                      <td>
+                        <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                      
+                      </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                      </td>
+                      
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                        </td>
+                    
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <tr>
+                        <td>
+                          <p class="text-xs  font-weight-bold mb-0">9/NOV/2022</p>
+                        
+                        </td>
+                        <td>
+                          <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                        
+                        </td>
+                      
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                        </td>
+                        
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                          </td>
+                      
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <tr>
+                          <td>
+                            <p class="text-xs  font-weight-bold mb-0">10/NOV/2022</p>
+                          
+                          </td>
+                          <td>
+                            <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                          
+                          </td>
+                        
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                          </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                            </td>
+                        
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="text-xs  font-weight-bold mb-0">11/NOV/2022</p>
+                          
+                          </td>
+                          <td>
+                            <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                          
+                          </td>
+                        
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                          </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                            </td>
+                        
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="text-xs  font-weight-bold mb-0">12/NOV/2022</p>
+                          
+                          </td>
+                          <td>
+                            <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                          
+                          </td>
+                        
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                          </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                            </td>
+                        
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <tr>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">13/NOV/2022</p>
+                            
+                            </td>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                            
+                            </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                            </td>
+                            
+                              <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                              </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">14/NOV/2022</p>
+                            
+                            </td>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                            
+                            </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                            </td>
+                            
+                              <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                              </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">15/NOV/2022</p>
+                            
+                            </td>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                            
+                            </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                            </td>
+                            
+                              <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                              </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">16/NOV/2022</p>
+                            
+                            </td>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                            
+                            </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                            </td>
+                            
+                              <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                              </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">17/NOV/2022</p>
+                            
+                            </td>
+                            <td>
+                              <p class="text-xs  font-weight-bold mb-0">9611.65</p>
+                            
+                            </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">4747.87</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">163.01</span>
+                            </td>
+                            
+                              <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">1867.00</span>
+                              </td>
+                          
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.30</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">0.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">16130.00</span>
+                            </td>
+                            <td class="align-middle text-center">
+                              <span class="text-secondary text-xs font-weight-bold">751.77</span>
+                            </td>
+                          </tr>
+                          
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+     
+</body>
+</html>

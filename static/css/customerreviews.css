@@ -1,0 +1,27 @@
+      
+        .container-m {
+          display: flex;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          padding:20px;
+      }
+      
+      .card {
+          background-color: #fff;
+          padding: 15px;
+          border: none;
+          height: 250px;
+          margin-top: 10px
+      }
+      
+      .u-color {
+          color: rgb(232, 137, 77)
+      }
+      
+      .user-image img {
+          border: 3px solid #00f;
+          padding: 2px
+      }

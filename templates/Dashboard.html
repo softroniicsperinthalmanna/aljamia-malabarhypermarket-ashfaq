@@ -1,0 +1,1415 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+
+
+
+
+
+
+
+
+
+
+      <meta charset="UTF-8">
+      <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+      <link
+        rel="stylesheet"
+        href="/contrast-bootstrap-pro/css/bootstrap.min.css" />
+      <link
+        rel="stylesheet"
+        href="../contrast-bootstrap-pro/css/cdb.css" />
+      <script
+        src="../contrast-bootstrap-pro/js/cdb.js"></script>
+      <script
+        src="../contrast-bootstrap-pro/js/bootstrap.min.js"></script>
+      <script
+        src="https://kit.fontawesome.com/9d1d9a82d2.js"
+        crossorigin="anonymous"></script>
+     
+    
+{% comment %}   
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ {% endcomment %}
+
+
+
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="apple-touch-icon" sizes="76x76" href="{% static 'images/img/apple-icon.png' %}">
+<link rel="icon" type="image/png" href="{% static 'img/favicon.png'%}">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+{% comment %} <link rel="stylesheet" href="{% static 'templatecss.css' %}"> {% endcomment %}
+<title>
+  
+   Material Dashboard of Malabar
+  
+
+  
+
+  
+</title>
+
+<style>
+  .chart-container {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
+  .table-responsive {
+  
+      height: 300px;
+    
+      border: 1px  solid #eee;
+      padding: 5px;
+      overflow-x: auto;
+    }
+    
+  
+    
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+  
+    
+</style>
+
+<script>new SimpleBar(document.querySelector('div'));</script>
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+<!-- Nucleo Icons -->
+<link href="{% static '/css/nucleo-icons.css' %}" rel="stylesheet" />
+<link href="{% static '/css/nucleo-svg.css' %}" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<!-- CSS Files -->
+
+
+
+<link id="pagestyle" href="{% static '/css/material-dashboard.css' %}" rel="stylesheet" />
+
+
+
+
+
+  </head>
+
+
+  <body class="g-sidenav-show " style="background-color: #121929;">
+    
+
+    
+
+    
+      <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " style="background-color:#473159 " id="sidenav-main ">
+
+  <div class="sidenav-header">
+    <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+      
+      <span class="font-weight-normal text-white display-6">Admin</span>
+    </a>
+  </div>
+
+
+  <hr class="horizontal light mt-0 mb-2">
+
+  <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+    <ul class="navbar-nav">
+      
+
+      
+        
+
+          
+
+          
+  
+<li class="nav-item">
+  <a class="nav-link text-white" href="Dashboard.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+      
+    <span class="nav-link-text ms-1 nav-link active">  <i class="material-icons opacity-10">dashboard</i>&nbsp;
+  
+  Dashboard</span>
+</div>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'salesreport' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">table_view</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Sales Report</span>
+  </a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'stockreport' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">table_view</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Stock Report</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'employeedetails' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">contacts</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Employees</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'customerreviews' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+    <i class="material-icons opacity-10">reviews</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Customer Reviews</span>
+  </a>
+</li>
+
+  
+
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'addemployee' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">group_add</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Add Employee</span>
+  </a>
+</li>
+
+ 
+  
+
+<li class="nav-item">
+  <a class="nav-link text-white " href="{% url 'index' %}">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">logout</i>
+      </div>
+    
+       <span class="nav-link-text ms-1">Sign Out</span>
+  </a>
+</li>
+  
+<!-- <li class="nav-item">
+  <a class="nav-link text-white " href="./sign-in.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">login</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Sign In</span>
+  </a>
+</li>
+
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="./sign-up.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">assignment</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Sign Up</span>
+  </a>
+</li> -->
+
+
+
+          
+
+        
+      
+    </ul>
+  
+</aside>
+
+      <main class="main-content border-radius-lg " style="background-color:#121929;">
+        <!-- Navbar -->
+
+ <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+  <div class="container-fluid py-1 px-3 ">
+    <nav aria-label="breadcrumb">
+      
+      <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Pages</a></li>
+        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
+      </ol>
+      <h6 class="font-weight-bolder mb-0 text-white ">Dashboard</h6>
+      
+    </nav>
+    
+    
+  <!-- </div> -->
+</nav>
+
+
+
+
+      </div>
+      </div>
+      
+<!-- <div class="card">
+  <h5 class="card-header">Customers</h5>
+  <div class="card-body">
+    <h5 class="card-title">345k</h5>
+    <p class="card-text">Feb 1 - Apr 1, United States</p>
+    <p class="card-text text-success">18.2% increase since last month</p>
+  </div>
+</div> -->
+<div class="row my-4">
+           
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0 m-5 " >
+      <div class="card shadow-light shadow-lg shadow" style="height:150px;">
+        <!-- <i class="material-icons opacity-10">weekend</i>"> -->
+          <h5 class="card-header">Today's Sales</h5>
+          <div class="card-body" style="line-height:0px">
+            <h5 class="card-title fs-2 px-4 py 3" style="line-height:0px">$334k</h5>
+            
+           
+          </div>
+        </div>
+  </div>
+  <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3 m-5">
+      <div class="card shadow-light shadow-lg " shadow style="height:150px">
+          <h5 class="card-header">Today's Expenditure</h5>
+          <div class="card-body">
+            <h5 class="card-title px-4 fw-bold fs-2" style="line-height:0px;font-size:medium;">$2.4k</h5>
+     
+           
+          </div>
+        </div>
+  </div>
+  <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3 m-5">
+      <div class="card shadow-light shadow-lg shadow"  shadow style="height:150px">
+          <h5 class="card-header">Today's Revenue</h5>
+         
+            <h5 class="card-title px-5 py-4 fs-2" style="line-height:0px ">$434k</h5>
+           
+            
+          </div>
+        </div>
+  </div>
+
+      
+          
+        </div>
+  </div>
+</div>
+<hr class="horizontal light mt-0 mb-2">
+<!-- graph -->
+<!-- pie chart -->
+
+
+<body>
+  <!-- line graph -->
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+<link
+	rel="stylesheet"
+	href=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+/>
+<link
+	rel=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+	type="text/css"
+/>
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js">
+</script>
+
+<style>
+	body {
+	text-align: center;
+	color: green;
+	}
+	h2 {
+	text-align: center;
+	font-family: "Verdana", sans-serif;
+	font-size: 40px;
+	}
+</style>
+<div class="fw-bold fs-3 px-5 py-3 text-start mb-3" style="color:#F9B17D;">Malbar Hypermarket LLC, Masafi</div>
+  
+  <div class="container-fluid">
+  <div class="row align-items-start ">
+    <div class="col-6 no-gutters" style="margin-left:20px;">
+      <div class="fs-6 fw-normal text-white text-start py-2 px-5">Sales Analytics</div>
+           <canvas id="chart"></canvas>
+  </div>
+	<div class="col-2 px-0 no-gutters">
+    <div class="fs-6 fw-normal text-white px-10 mx-5 ">Customer Feedback</div>
+  <div id="donut-chart" style="padding-left:400px;margin-left:-250px"></div>	
+  </div>
+</div>
+</div>
+ 
+<div class="fw-bold fs-3 px-5 py-3 text-start mb-3" style="color:#F9B17D;">Malbar Hypermarket LLC, Dibba</div>
+  <hr>
+  <div class="container-fluid">
+  <div class="row align-items-start ">
+    <div class="col-6 no-gutters" style="margin-left:20px;">
+      <div class="fs-6 fw-normal text-white text-start py-2 px-5 ">Sales Analytics</div>
+ 
+    <canvas id="chart1"></canvas>
+  </div>
+  
+  <div class="col-2 no-gutters">
+    <div class="fs-6 fw-normal text-white px-10 mx-5 mb-3 ">Customer Feedback</div>
+       <div id="donut-chart1" style="padding-left:400px;margin-left:-250px"></div>	
+  </div>
+  </div>
+  </div>
+
+
+      <hr>
+      <div class="fw-bold fs-3 px-5 py-3 text-start" style="color:#F9B17D;">Malbar Hypermarket LLC,Sanayya</div>
+  <hr>
+  <div class="container-fluid">
+  <div class="row align-items-start ">
+    <div class="col-6 no-gutters" style="margin-left:19px;">
+      <div class="fs-6 fw-normal text-white px-5 py-2">Sales Analytics</div>
+      <canvas id="line-chart"></canvas>
+  </div>
+	<div class="col-2 px-0 no-gutters ">
+    <div class="fs-6 fw-normal text-white px-10 text-start ">Customer Feedback</div>
+    <div id="donut-chart2" style="padding-left:400px;margin-left:-250px"></div>	
+  </div>
+</div>
+</div>
+     
+    
+
+
+
+
+
+
+
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="{% static '/js/material-dashboard.min.js' %}">
+    
+    </script> 
+    <script src="{% static '/js/popper.min.js'%}"></script>
+<script src="{% static '/js/bootstrap.min.js' %}"></script>
+
+<script src="{% static '/js/chartjs.min.js' %}"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js">
+</script>
+<script>
+  // Chart
+  const dataLine = {
+  type: 'line',
+    data: {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [{
+          label: "My First dataset",
+          data: [65, 59, 80, 81, 56, 55, 40],
+          backgroundColor: [
+            'rgba(105, 0, 132, .2)',
+          ],
+          fill: true,
+          borderColor: [
+            'rgba(255, 99, 132, 0.8)',
+          ],
+          borderWidth: 2,
+          tension: 0.4
+        },
+        {
+          label: "My Second dataset",
+          data: [28, 48, 40, 19, 86, 27, 90],
+          backgroundColor: [
+            'rgba(0, 137, 132, .2)',
+          ],
+          fill: true,
+          borderColor: [
+            'rgba(50, 150, 255, 1)',
+          ],
+          borderWidth: 2,
+          tension: 0.4
+        }
+      ]
+    },
+    options: {
+      responsive: true
+    }
+};
+
+new mdb.Chart(document.getElementById('line-chart'), dataLine);
+</script>
+<script>
+  const ctx = document.getElementById("chart").getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["sunday", "monday", "tuesday",
+      "wednesday", "thursday", "friday", "saturday"],
+      datasets: [{
+        label: 'Last week',
+        backgroundColor: '#A68FB9',
+        borderColor: '#8E43CA',
+        
+        data: [3000, 4000, 2000, 5000, 8000, 9000, 2000],
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+          }
+        }]
+      }
+    },
+  });
+</script>
+<script>
+  const ctx = document.getElementById("chart1").getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["sunday", "monday", "tuesday",
+      "wednesday", "thursday", "friday", "saturday"],
+      datasets: [{
+        label: 'Last week',
+        backgroundColor: '#A68FB9',
+        borderColor: '#8E43CA',
+        
+        data: [3000, 4000, 2000, 5000, 8000, 9000, 2000],
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+          }
+        }]
+      }
+    },
+  });
+</script>
+<script>
+  const ctx = document.getElementById("chart2").getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["sunday", "monday", "tuesday",
+      "wednesday", "thursday", "friday", "saturday"],
+      datasets: [{
+        label: 'Last week',
+        backgroundColor: '#A68FB9',
+        borderColor: '#8E43CA',
+        
+        data: [3000, 4000, 2000, 5000, 8000, 9000, 2000],
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+          }
+        }]
+      }
+    },
+  });
+</script>
+<script>
+	var chart = bb.generate({
+		data: {
+		columns: [
+			["Blue", 2],
+			["orange", 4],
+			["green", 3],
+		],
+		type: "donut",
+		onclick: function (d, i) {
+			console.log("onclick", d, i);
+		},
+		onover: function (d, i) {
+			console.log("onover", d, i);
+		},
+		onout: function (d, i) {
+			console.log("onout", d, i);
+		},
+		},
+		donut: {
+		title: "70",
+		},
+		bindto: "#donut-chart",
+	});
+	</script>
+
+
+<script>
+	var chart = bb.generate({
+		data: {
+		columns: [
+			["Blue", 2],
+			["orange", 4],
+			["green", 3],
+		],
+		type: "donut",
+		onclick: function (d, i) {
+			console.log("onclick", d, i);
+		},
+		onover: function (d, i) {
+			console.log("onover", d, i);
+		},
+		onout: function (d, i) {
+			console.log("onout", d, i);
+		},
+		},
+		donut: {
+		title: "70",
+		},
+		bindto: "#donut-chart1",
+	});
+	</script>
+  <script>
+    var chart = bb.generate({
+      data: {
+      columns: [
+        ["Blue", 2],
+        ["orange", 4],
+        ["green", 3],
+      ],
+      type: "donut",
+      onclick: function (d, i) {
+        console.log("onclick", d, i);
+      },
+      onover: function (d, i) {
+        console.log("onover", d, i);
+      },
+      onout: function (d, i) {
+        console.log("onout", d, i);
+      },
+      },
+      donut: {
+      title: "70",
+      },
+      bindto: "#donut-chart2",
+    });
+    </script>
+  
+   <hr>
+   <br>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- table -->
+ <div class="container-fluid py-4 ">  <div class="row" >
+    <div class="col-12">
+      <div class="card my-4" >
+        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2" style="background-color:#473159">
+          <div class="shadow-primary border-radius-lg pt-4 pb-3" >
+            <h6 class="text-white fw-normal text-start ms-3 text-capitalize ps-3">Best Selling Products of Malbar Hypermarket,Masafi</h6>
+          </div>
+        </div>
+        <div class="card-body px-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0 ">
+              <thead>
+                <tr>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PRODUCT ID</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUCT NAME</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PRICE</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">TOTAL SALES</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">STOCK</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">STATUS</th>
+
+              
+
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <!-- <div class="d-flex px-2 py-1"> -->
+                      <!-- <div>
+                      <h6>35381</h6>
+                      </div> -->
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class=" text-sm">3581</h6>
+                       
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">0245 MILAMINE PLATE</p>
+                    <p class="text-xs text-secondary mb-0">utensils</p>
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$344567</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">46</span>
+                  </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">23</span>
+                    </td>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">8901444102454</h6>
+                      
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">1121 RICE 20KG</p>
+                    <p class="text-xs text-secondary mb-0">Rice</p>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$34533</span>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">44</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">11</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-warning">Restock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">356892556532</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">12PS CUPSOUCER SET AC655</p>
+                    <p class="text-xs text-secondary mb-0">Utensils</p>
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$33673</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">76</span>
+                  </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">0</span>
+                    </td>
+                  
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-danger">Out of stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">6227691231238</h6>
+                       
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">13APROCELAIN TUBE FUSE</p>
+                    <p class="text-xs text-secondary mb-0">Bulb</p>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$354354</span>
+                  </td>
+  
+                    
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">45</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">34</span>
+                    </td>
+                  
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">8025202211605</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">160VALDIGRANOFUSILLI500GM</p>
+                    <p class="text-xs text-secondary mb-0">Rice</p>
+                  </td>
+                  
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$24324</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">25</span>
+                  </td>
+                   
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">22</span>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                    </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">850026200906</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">2 DIAMONDS SARDINES IN TOMATO SAUCE 215G</p>
+                    <p class="text-xs text-secondary mb-0">Tomato Sauce</p>
+                  </td>
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      Edit
+                    </a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">850026200906</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">2 DIAMONDS SARDINES IN TOMATO SAUCE 215G</p>
+                    <p class="text-xs text-secondary mb-0">Tomato Sauce</p>
+                  </td>
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      Edit
+                    </a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid py-4">  <div class="row" >
+    <div class="col-12">
+      <div class="card my-4" >
+        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2" style="background-color:#473159">
+          <div class="shadow-primary border-radius-lg pt-4 pb-3" >
+            <h6 class="text-white fw-normal text-start ms-3 text-capitalize ps-3">Best Selling Products of Malbar Hypermarket,Masafi</h6>
+          </div>
+        </div>
+        <div class="card-body px-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0 ">
+              <thead>
+                <tr>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PRODUCT ID</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUCT NAME</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PRICE</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">TOTAL SALES</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">STOCK</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">STATUS</th>
+
+              
+
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <!-- <div class="d-flex px-2 py-1"> -->
+                      <!-- <div>
+                      <h6>35381</h6>
+                      </div> -->
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class=" text-sm">3581</h6>
+                       
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">0245 MILAMINE PLATE</p>
+                    <p class="text-xs text-secondary mb-0">utensils</p>
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$344567</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">46</span>
+                  </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">23</span>
+                    </td>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">8901444102454</h6>
+                      
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">1121 RICE 20KG</p>
+                    <p class="text-xs text-secondary mb-0">Rice</p>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$34533</span>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">44</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">11</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-warning">Restock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">356892556532</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">12PS CUPSOUCER SET AC655</p>
+                    <p class="text-xs text-secondary mb-0">Utensils</p>
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$33673</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">76</span>
+                  </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">0</span>
+                    </td>
+                  
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-danger">Out of stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">6227691231238</h6>
+                       
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">13APROCELAIN TUBE FUSE</p>
+                    <p class="text-xs text-secondary mb-0">Bulb</p>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$354354</span>
+                  </td>
+  
+                    
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">45</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">34</span>
+                    </td>
+                  
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">8025202211605</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">160VALDIGRANOFUSILLI500GM</p>
+                    <p class="text-xs text-secondary mb-0">Rice</p>
+                  </td>
+                  
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$24324</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">25</span>
+                  </td>
+                   
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">22</span>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                    </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">850026200906</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">2 DIAMONDS SARDINES IN TOMATO SAUCE 215G</p>
+                    <p class="text-xs text-secondary mb-0">Tomato Sauce</p>
+                  </td>
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      Edit
+                    </a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">850026200906</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">2 DIAMONDS SARDINES IN TOMATO SAUCE 215G</p>
+                    <p class="text-xs text-secondary mb-0">Tomato Sauce</p>
+                  </td>
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      Edit
+                    </a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid py-4">  <div class="row" >
+    <div class="col-12">
+      <div class="card my-4" >
+        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2" style="background-color:#473159">
+          <div class="shadow-primary border-radius-lg pt-4 pb-3" >
+            <h6 class="text-white fw-normal text-start ms-3 text-capitalize ps-3">Best Selling Products of Malbar Hypermarket,Masafi</h6>
+          </div>
+        </div>
+        <div class="card-body px-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0 ">
+              <thead>
+                <tr>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PRODUCT ID</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUCT NAME</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">PRICE</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">TOTAL SALES</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">STOCK</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">STATUS</th>
+
+              
+
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <!-- <div class="d-flex px-2 py-1"> -->
+                      <!-- <div>
+                      <h6>35381</h6>
+                      </div> -->
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class=" text-sm">3581</h6>
+                       
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">0245 MILAMINE PLATE</p>
+                    <p class="text-xs text-secondary mb-0">utensils</p>
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$344567</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">46</span>
+                  </td>
+                  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">23</span>
+                    </td>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">8901444102454</h6>
+                      
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">1121 RICE 20KG</p>
+                    <p class="text-xs text-secondary mb-0">Rice</p>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$34533</span>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">44</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">11</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-warning">Restock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">356892556532</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">12PS CUPSOUCER SET AC655</p>
+                    <p class="text-xs text-secondary mb-0">Utensils</p>
+                  </td>
+                
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$33673</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">76</span>
+                  </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">0</span>
+                    </td>
+                  
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-danger">Out of stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">6227691231238</h6>
+                       
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">13APROCELAIN TUBE FUSE</p>
+                    <p class="text-xs text-secondary mb-0">Bulb</p>
+                  </td>
+                 
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$354354</span>
+                  </td>
+  
+                    
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">45</span>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">34</span>
+                    </td>
+                  
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">8025202211605</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">160VALDIGRANOFUSILLI500GM</p>
+                    <p class="text-xs text-secondary mb-0">Rice</p>
+                  </td>
+                  
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">$24324</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">25</span>
+                  </td>
+                   
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">22</span>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <span class="badge badge-sm bg-gradient-success">In Stock</span>
+                    </td>
+                  
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">850026200906</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">2 DIAMONDS SARDINES IN TOMATO SAUCE 215G</p>
+                    <p class="text-xs text-secondary mb-0">Tomato Sauce</p>
+                  </td>
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      Edit
+                    </a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">850026200906</h6>
+                        
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0">2 DIAMONDS SARDINES IN TOMATO SAUCE 215G</p>
+                    <p class="text-xs text-secondary mb-0">Tomato Sauce</p>
+                  </td>
+                  
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      Edit
+                    </a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
+
+      
